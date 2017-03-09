@@ -105,7 +105,12 @@ body {
 	width: 70.333%;
 	margin-right: 2.333%;
 }
-.main h2{
+.main_modified{
+	float:left;
+	width: 100%;
+	margin-right: 2.333%;
+}
+.main h2, .main_modified h2{
 	font-family: 'Pompiere', cursive;
 	padding: 1.2% 2%;
 	background: #32251B;
@@ -150,6 +155,11 @@ body {
 .txt_para1 p{
 	line-height:1.8em;
 	font-size:0.824em;
+	color: #32251B;
+}
+.txt_para1 h3{
+	line-height:1.8em;
+	font-size:1.150em;
 	color: #32251B;
 }
 /*btn*/
