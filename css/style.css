@@ -60,11 +60,11 @@ body {
 .nav li {
 	line-height:2.8em; 
 	display: block; 
-	float: left; 
+	/* 	*/
 	clear: none;
 	border-right: 1px ridge #A68061
 }
-.nav li a {
+.nav li a, .nav li ul a {
 	background: url('../images/nav_bg.png');
 	font-family: 'Pompiere', cursive;
 	padding:15px 30px; 
@@ -84,7 +84,7 @@ body {
 .nav li a:first-child{
 	border-left: none;
 }
-.nav li a:hover { 
+.nav li a:hover, .nav li ul a:hover { 
 	color:#fefefe;
 	background: url('../images/nav_active.png');
 }
@@ -95,6 +95,12 @@ body {
 .slider{
 	padding: 5% 0%;
 }
+/*Added by Varun - Start*/
+.carousel-control.left, .carousel-control.right{
+	width: none !important;
+	color: none !important;
+}
+/*Added by Varun - End*/
 /*content*/
 .cont_bg{
 	background: url('../images/h_bg.png');
@@ -131,7 +137,12 @@ body {
 	width: 32.333%;
 	margin-right: 2.333%;
 }
-.txt_img img{
+.txt_img_right{
+	float:right;
+	width: 32.333%;
+	margin-right: 2.333%;
+}
+.txt_img img, .txt_img_right img{
 	max-width: 100%;
 	display: block;
 	border: 1px solid rgb(238, 238, 238);
@@ -147,14 +158,16 @@ body {
 	width: 64.333%;
 	
 }
-.txt_para p{
+.txt_para p, .txt_para blockquote{
 	line-height:1.8em;
-	font-size:0.824em;
+	/*font-size:0.824em;*/
+	font-size: 1.0em;
 	color: #32251B;
 }
 .txt_para1 p{
 	line-height:1.8em;
-	font-size:0.824em;
+	font-size: 1.0em;
+	/*font-size:0.824em;*/
 	color: #32251B;
 }
 .txt_para1 h3{
@@ -706,6 +719,18 @@ body {
 	color: #32251B;	
 }
 /***** Media Quries *****/
+@media (min-width: 1200px)
+.container {
+    width: inherit;
+}
+@media (min-width: 992px)
+.container {
+    width: inherit;
+}
+@media (min-width: 768px)
+.container {
+    width: inherit;
+}
 @media only screen and (max-width: 1280px) {
 	.wrap{
 		width:95%;
