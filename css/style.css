@@ -40,18 +40,18 @@ body {
 	border-bottom:5px solid #32251B;
 	background: url('../images/h_bg.png');
 }
-.header{
-	display: block;
+#header{
+	display: inline-block;
 }
-.logo{
-	float: left;
-	margin:5px 0 0 5px;
+
+/*Navigation Bar*/
+#myNavbar{
+    float: right!important;
+   /* margin-right: -15px;
+    margin-top: 2px;*/
 }
-.header-right{
-	float:right;
-    /*Added by Varun*/
-    margin-top: 5%;
-}
+
+
 /*  NAVIGATION */
 .nav li.active a{
 	color:#fff;
@@ -869,3 +869,4 @@ body {
 		padding: 4px 16px;
 	}
 }
+
