@@ -28,6 +28,11 @@ nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
+a {
+    color: #32251b;
+    text-decoration: none;
+    font-size: 1.26em;
+}
 body {
 	font-family:trebuchet ms, arial, sans-serif;
 }
@@ -42,6 +47,18 @@ body {
 }
 #header{
 	display: inline-block;
+    text-align: center;
+}
+
+#site-name{
+    color: #32251b;
+    font-size: 2.2em;
+}
+
+#alignnav{
+    margin-top: 5%;
+    margin-right: 0px;
+    font-size: small;
 }
 
 /*Navigation Bar*/
