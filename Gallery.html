@@ -21,20 +21,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/jquery.flexslider.js" type="text/javascript"></script>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="js/photo-gallery.js"></script>
 
-</head>
-    <style>
+
+<style>
       ul {         
           padding:0 0 0 0;
           margin:0 0 0 0;
       }
       ul li {     
           list-style:none;
-          margin-bottom:25px;           
+          /*margin-bottom:25px;           */
       }
       ul li img {
           cursor: pointer;
@@ -72,19 +69,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           }          
       }
   </style>
+</head>
 
 <body>
 <div class="h-bg">
-    <nav class="navbar" style="background-color:none;">
-        <div class="container-fluid">
-            <header id="header" role="banner">
-                <a href=""><img src="images/Logo1.png" height="120px" alt="Home" /></a>
-                <div id="site-name"> 
-                    <p><b>G Madegowda Institute <br>Of Technology</b></p>
-                </div>
-            </header>
-            <ul class="nav navbar-nav navbar-right" id="alignnav">
-                <li><a href="index.html">Home</a></li>
+    
+    <header id="header" role="banner">
+    <div class="row">
+        <div class="col-sm-4">
+            <center><a href=""><img src="images/Logo1.png" height="150px" alt="Home" /></a></center>
+        </div>
+        <div class="col-sm-8">
+            <div id="site-name"> 
+                <center>
+                    <h1 id="sitenameh">Bharathi Education Trust<sup>&reg;</sup> Since 1962</h1>
+                    <p><b>G Madegowda Institute Of Technology</b></p>
+                </center>
+            </div>
+        </div>
+    </div>
+    </header>
+    
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav navbar-nav" id="alignnav">
+                <li class="active"><a href="index.html">Home</a></li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="AboutUs_College.html">About College</a></li>
@@ -99,7 +108,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </ul>
                 </li>
                 <li><a href="Infrastructure.html">Infrastructure</a></li>
-                <li class="active"><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <!--<li><a href="">BET Institutions</a></li>-->
             </ul>
@@ -110,66 +119,127 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="clear"></div>
     <div class="container"><br></div>
     
-    <div class="container">    
-        <ul class="row">
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery.jpg">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery1.jpg">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery2.jpg">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery3.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery4.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery5.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery6.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery7.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery8.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery9.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery10.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery11.jpg">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery12.jpg">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery13.JPG">
-            </li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="images/Gallery14.jpg">
-            </li>
-          </ul>             
-    </div> <!-- /container -->
-    
-     
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">         
-          <div class="modal-body">                
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    
+<div class="container">
+    <!-- thumb navigation carousel -->
+    <div class="col-md-12 hidden-sm hidden-xs" id="slider-thumbs">
+        
+            <!-- thumb navigation carousel items -->
+          <ul class="list-inline">
+          <li> <a id="carousel_selector_0" class="selected">
+            <img src="images/Gallery.jpg" width="80px" height="60px" class="img-responsive">
+          </a></li>
+          <li> <a id="carousel_selector_1">
+            <img src="images/Gallery1.jpg" width="80px" height="60px" class="img-responsive">
+          </a></li>
+          <li> <a id="carousel_selector_2">
+            <img src="images/Gallery2.jpg" width="80px" height="60px" class="img-responsive">
+          </a></li>
+          <li> <a id="carousel_selector_3">
+            <img src="images/Gallery3.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+                <li> <a id="carousel_selector_4">
+            <img src="images/Gallery4.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+          <li> <a id="carousel_selector_5">
+            <img src="images/Gallery5.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+          <li> <a id="carousel_selector_6">
+            <img src="images/Gallery6.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+          <li> <a id="carousel_selector_7">
+            <img src="images/Gallery7.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+            <li> <a id="carousel_selector_8">
+            <img src="images/Gallery8.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+              <li> <a id="carousel_selector_9">
+            <img src="images/Gallery9.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+              <li> <a id="carousel_selector_10">
+            <img src="images/Gallery10.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+              <li> <a id="carousel_selector_11">
+            <img src="images/Gallery11.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+              <li> <a id="carousel_selector_12">
+            <img src="images/Gallery12.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+              <li> <a id="carousel_selector_13">
+            <img src="images/Gallery13.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+              <li> <a id="carousel_selector_14">
+            <img src="images/Gallery14.JPG" width="80px" height="60px" class="img-responsive">
+          </a></li>
+            </ul>
+        
+    </div>
+  
+  
+    <!-- main slider carousel -->
+    <div class="row">
+        <div class="col-md-12" id="slider">
+            
+                <div class="col-md-12" id="carousel-bounding-box">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- main slider carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item" data-slide-number="0">
+                                <img src="images/Gallery.jpg" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="1">
+                              <img src="images/Gallery1.jpg" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="2">
+                                <img src="images/Gallery2.jpg" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="3">
+                                <img src="images/Gallery3.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="4">
+                                <img src="images/Gallery4.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="5">
+                                <img src="images/Gallery5.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="6">
+                                <img src="images/Gallery6.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="7">
+                                <img src="images/Gallery7.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="8">
+                                <img src="images/Gallery8.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="9">
+                                <img src="images/Gallery9.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="10">
+                                <img src="images/Gallery10.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="11">
+                                <img src="images/Gallery11.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="12">
+                                <img src="images/Gallery12.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="13">
+                                <img src="images/Gallery13.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                            <div class="item" data-slide-number="14">
+                                <img src="images/Gallery14.JPG" width="1200px" height="480px" class="img-responsive">
+                            </div>
+                        </div>
+                        <!-- main slider carousel nav controls --> <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <!--/main slider carousel-->
+
+</div>
  	
 <div class="menu2_bg">
 <div class="wrap"> 
@@ -225,29 +295,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 </div>
 </body>
-    <script type="text/javascript">
-$('li img').on('click',function(){
-  var src = $(this).attr('src');
-  var img = '<img src="' + src + '" class="img-responsive"/>';
- 
-  //Start of new code
-  var index = $(this).parent('li').index();
-  var html = '';
-  html += img;
-  html += '<div style="height:25px;clear:both;display:block;">';
-  html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
-  html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
-  html += '</div>';
-  //End of new code
- 
-  $('#myModal').modal();
-  $('#myModal').on('shown.bs.modal', function(){
-      $('#myModal .modal-body').html(html);
-  })
-  $('#myModal').on('hidden.bs.modal', function(){
-      $('#myModal .modal-body').html('');
-  });
- });
+<script>
+    $('#myCarousel').carousel({
+    interval: 4000
+});
+
+// handles the carousel thumbnails
+$('[id^=carousel_selector_]').click( function(){
+  var id_selector = $(this).attr("id");
+  var id = id_selector.substr(id_selector.length -1);
+  id = parseInt(id);
+  $('#myCarousel').carousel(id);
+  $('[id^=carousel_selector_]').removeClass('selected');
+  $(this).addClass('selected');
+});
+
+// when the carousel slides, auto update
+$('#myCarousel').on('slid', function (e) {
+  var id = $('.item.active').data('slide-number');
+  id = parseInt(id);
+  $('[id^=carousel_selector_]').removeClass('selected');
+  $('[id=carousel_selector_'+id+']').addClass('selected');
+});
 </script>
 
 </html>
