@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /* reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
-ol,ul{/*list-style:none;margin:0;padding:0;*/line-height: 1.8em;font-size: 1.0em;color: #32251B;text-align: justify;}
+ol,ul{/*list-style:none;margin:0;padding:0;*/line-height: 1.8em;font-size: 1.0em;color: #32251B;text-align: justify;margin:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -41,6 +41,10 @@ body {
 	width:80%;
 }
 /*header-bg */
+.box-to-override {
+    margin-left: -15px;
+    margin-right: -15px
+}
 .h-bg{
 	border-bottom:5px solid #32251B;
 	background: url('../images/h_bg.png');
@@ -71,6 +75,12 @@ body {
     margin-right: 0px;
     font-size: initial;
 }
+#betInst{
+    /*margin-top: 2%;*/
+    margin-right: 0px;
+    font-size: initial;
+    background: url('../images/nav_active.png')
+}
 
 /*Navigation Bar*/
 #myNavbar{
@@ -78,9 +88,23 @@ body {
    /* margin-right: -15px;
     margin-top: 2px;*/
 }
+.bet{
+    text-align: right;
+    background-color: #eaeaea;
+    background: url('../images/nav_active.png');
+}
+#betp{
+    font-size: 1.6em;
+    color: #fff;
+    margin-right: 15px;
+}
 
 
 /*  NAVIGATION */
+.dropdown-menu li{
+    font-size: smaller;
+    width: 100%;
+}
 .nav li.active a{
 	color:#fff;
 	background: url('../images/nav_active.png');
@@ -389,6 +413,7 @@ body {
 /*footer*/
 .f_bg{
 	background:url('../images/f_bg.png');
+    border-top:5px solid #32251B;
 	padding: 3% 0;
 }
 .f_grid{

@@ -13,7 +13,7 @@ Author URL: http://www.hostcatalyst.net
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -39,21 +39,31 @@ Author URL: http://www.hostcatalyst.net
     <nav class="navbar">
         <div class="container">
             <ul class="nav navbar-nav" id="alignnav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="AboutUs_College.html">About Us</a></li>
-                <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+                <li><a href="index.html">Home</a></li>
+                <!--<li class="active"><a href="AboutUs_College.html">About Us</a></li>-->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="AboutUs_College.html">About College</a></li>
-                        <li><a href="AboutUs_BET.html">BET</a></li>
+                        <li class="active"><a href="">BET</a></li>
                     </ul>
-                </li>-->
+                </li>
+                
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="UnderGraduation.html">Under Graduation</a></li>
+                    <ul class="dropdown">
+                        <li class="dropdown-submenu"><a href="UnderGraduation.html" class="under">Undergraduation</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Civil Engineering</a></li>
+                            <li><a href="#">Computer Science & Engg</a></li>
+                            <li><a href="#">Electronics & Communication Engg</a></li>
+                            <li><a href="#">Electrical & Electronics Engg</a></li>
+                            <li><a href="#">Mechanical Engineering</a></li>
+                            </ul></li></ul>
                         <li><a href="#">Post Graduation</a></li>
                         <li><a href="#">Basic Sciences</a></li>
                     </ul>
                 </li>
+                
                 <li><a href="Infrastructure.html">Infrastructure</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -62,6 +72,15 @@ Author URL: http://www.hostcatalyst.net
         </div>
     </nav>
 </div>
+    <script>
+        $(document).ready(function(){
+            $('.dropdown-submenu a.under').on("click",function(e){
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
 
 <div class="cont_bg">
     <div class="wrap">
