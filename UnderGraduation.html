@@ -16,6 +16,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -49,13 +50,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li><a href="AboutUs_BET.html">BET</a></li>
                     </ul>
                 </li>-->
+                
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a href="UnderGraduation.html">Under Graduation</a></li>
+                    <ul class="dropdown">
+                        <li class="dropdown-submenu"><a href="UnderGraduation.html" class="under">Undergraduation</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Civil Engineering</a></li>
+                            <li><a href="#">Computer Science & Engg</a></li>
+                            <li><a href="#">Electronics & Communication Engg</a></li>
+                            <li><a href="#">Electrical & Electronics Engg</a></li>
+                            <li><a href="#">Mechanical Engineering</a></li>
+                            </ul></li></ul>
                         <li><a href="#">Post Graduation</a></li>
                         <li><a href="#">Basic Sciences</a></li>
                     </ul>
                 </li>
+                
                 <li><a href="Infrastructure.html">Infrastructure</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -63,7 +74,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </ul>
         </div>
     </nav>
+    
 </div>
+    <script>
+        $(document).ready(function(){
+            $('.dropdown-submenu a.under').on("click",function(e){
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
 
 <div class="cont_bg">
 <div class="wrap">
@@ -246,7 +267,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
  <div class="clear"></div>
  </div>
-</div>
 </div>
 
 <div class="menu2_bg">
