@@ -70,11 +70,11 @@ body {
     /*text-align: initial;*/
 }
 
-#alignnav{
+/*#alignnav{
     margin-top: 2%;
     margin-right: 0px;
     font-size: initial;
-}
+}*/
 #betInst{
     /*margin-top: 2%;*/
     margin-right: 0px;
@@ -84,8 +84,8 @@ body {
 
 /*Navigation Bar*/
 #myNavbar{
-    float: right!important;
-   /* margin-right: -15px;
+    /* float: right!important;
+    margin-right: -15px;
     margin-top: 2px;*/
 }
 .bet{
@@ -101,6 +101,31 @@ body {
 
 
 /*  NAVIGATION */
+
+/* navbar added by Varun*/
+.navbar-default {
+    background-color: #fff !important;
+    border-color: #ac886b !important;
+    background: url('../images/h_bg.png');
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #ac886b !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important; 
+}
+.navbar-default .btn-navbar{
+    background-color: white !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: white !important;
+}
+/*Added by Varun - End */
+
 .dropdown-menu li{
     font-size: smaller;
     width: 100%;
