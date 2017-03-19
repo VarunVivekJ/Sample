@@ -136,11 +136,14 @@ body {
 }*/
 /*Added by Varun - End */
 
-.dropdown-menu li{
+.dropdown-menu li, .dropdown-menu ul{
     font-size: smaller;
     width: 100%;
     border-bottom: 1px ridge #A68061;
     color: #fff !important;
+}
+.dropdown-menu li{
+    font-size: 10px !important;
 }
 .nav li.active a{
 	color:#fff;

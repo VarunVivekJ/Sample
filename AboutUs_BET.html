@@ -20,47 +20,111 @@ Author URL: http://www.hostcatalyst.net
 
 <div class="h-bg">
     
-    <header id="header" role="banner">
-    <div class="row">
-        <div class="col-sm-4">
-            <center><a href=""><img src="images/Logo1.png" height="150px" alt="Home" /></a></center>
-        </div>
-        <div class="col-sm-8">
-            <div id="site-name"> 
-                <center>
-                    <h1 id="sitenameh">Bharathi Education Trust<sup>&reg;</sup> Since 1962</h1>
-                    <p><b>G Madegowda Institute Of Technology</b></p>
-                </center>
+    <!--<ul class="nav navbar-nav navbar-right" id="betInst">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BET Institutions <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li>
+                <div class="row" style="width: 600px;">
+                    <ul>
+                        <li><a href="#">test1-1</a></li>
+                        <li><a href="#">test1-2</a></li>
+                        <li><a href="#">test1-3</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">test2-1</a></li>
+                        <li><a href="#">test2-2</a></li>
+                        <li><a href="#">test2-3</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">test3-1</a></li>
+                        <li><a href="#">test3-2</a></li>
+                        <li><a href="#">test3-3</a></li>
+                    </ul>
+                </div>
+            </li>
+            </ul>
+        </li>
+    </ul>-->
+    
+    <div class="container">
+        <div class="box-to-override">
+        <header id="header" role="banner">
+        <div class="row">
+            <div class="col-sm-4">
+                <center><a href=""><img src="images/Logo1.png" height="150px" alt="Home" /></a></center>
+            </div>
+            <div class="col-sm-8">
+                <div id="site-name"> 
+                    <center>
+                        <h1 id="sitenameh">Bharathi Education Trust<sup>&reg;</sup> Since 1962</h1>
+                        <p><b>G Madegowda Institute Of Technology</b></p>
+                    </center>
+                </div>
             </div>
         </div>
+        </header>
+        </div>
     </div>
-    </header>
     
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav navbar-nav" id="alignnav">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!--<ul class="nav navbar-nav" id="alignnav">-->
+            <div class="navbar-header" id="alignnav">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                </div>
+            <div class="container">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" id="alignnav">
                 <li><a href="index.html">Home</a></li>
-                <!--<li class="active"><a href="AboutUs_College.html">About Us</a></li>-->
+                <!--<li><a href="AboutUs_College.html">About Us</a></li>-->
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="AboutUs_College.html">About College</a></li>
                         <li class="active"><a href="">BET</a></li>
                     </ul>
                 </li>
-                
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                    <ul class="dropdown">
-                        <li class="dropdown-submenu"><a href="UnderGraduation.html" class="under">Undergraduation</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Civil Engineering</a></li>
-                            <li><a href="#">Computer Science & Engg</a></li>
-                            <li><a href="#">Electronics & Communication Engg</a></li>
-                            <li><a href="#">Electrical & Electronics Engg</a></li>
-                            <li><a href="#">Mechanical Engineering</a></li>
-                            </ul></li></ul>
-                        <li><a href="#">Post Graduation</a></li>
-                        <li><a href="#">Basic Sciences</a></li>
+                        <ul class="dropdown">
+                            <li class="dropdown-submenu"><a href="" class="under">UnderGraduation</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="CivilEng.html">Civil Engg.</a></li>
+                                    <li><a href="ComputerScience.html">C S E</a></li>
+                                    <li><a href="ElecNCom.html">E C E</a></li>
+                                    <li><a href="ElecNEle.html">E E E</a></li>
+                                    <li><a href="Mechanical.html">Mechanical Engg.</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--<ul class="dropdown">
+                            <li class="dropdown-submenu"><a href="" class="under">Post Graduation</a>
+                                <ul class="dropdown-menu">
+                                    <ul class="dropdown">
+                                        <li class="dropdown-submenu"><a href="" class="under">M Tech</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="">Product Design and Manufacturing</a></li>
+                                                <li><a href="">Digial Electronics and Communication System</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </li>
+                        </ul>-->
+                        <ul><a href="PostGraduation.html">PostGraduation</a></ul>
+                        <ul><a href="BasicSciences.html">Basic Sciences</a></ul>
+                        <!--<ul class="dropdown">
+                            <li class="dropdown-submenu"><a href="" class="under">Basic Science</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Mathematics</a></li>
+                                    <li><a href="">Physics</a></li>
+                                    <li><a href="#">Chemistry</a></li>
+                                </ul>
+                            </li>
+                        </ul>-->
                     </ul>
                 </li>
                 
@@ -69,6 +133,8 @@ Author URL: http://www.hostcatalyst.net
                 <li><a href="contact.html">Contact Us</a></li>
                 <!--<li><a href="">BET Institutions</a></li>-->
             </ul>
+            </div>
+        </div>
         </div>
     </nav>
 </div>
