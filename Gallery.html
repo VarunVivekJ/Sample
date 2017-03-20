@@ -212,34 +212,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         
             <!-- thumb navigation carousel items -->
           <ul class="list-inline">
-          <li> <a id="carousel_selector_0" class="selected">
+          <li> <a id="carousel_selector_00" class="selected">
             <img src="images/Gallery.jpg" width="80px" height="60px" class="img-responsive">
           </a></li>
-          <li> <a id="carousel_selector_1">
+          <li> <a id="carousel_selector_01">
             <img src="images/Gallery1.jpg" width="80px" height="60px" class="img-responsive">
           </a></li>
-          <li> <a id="carousel_selector_2">
+          <li> <a id="carousel_selector_02">
             <img src="images/Gallery2.jpg" width="80px" height="60px" class="img-responsive">
           </a></li>
-          <li> <a id="carousel_selector_3">
+          <li> <a id="carousel_selector_03">
             <img src="images/Gallery3.JPG" width="80px" height="60px" class="img-responsive">
           </a></li>
-                <li> <a id="carousel_selector_4">
+                <li> <a id="carousel_selector_04">
             <img src="images/Gallery4.JPG" width="80px" height="60px" class="img-responsive">
           </a></li>
-          <li> <a id="carousel_selector_5">
+          <li> <a id="carousel_selector_05">
             <img src="images/Gallery5.JPG" width="80px" height="60px" class="img-responsive">
           </a></li>
-          <li> <a id="carousel_selector_6">
+          <li> <a id="carousel_selector_06">
             <img src="images/Gallery6.JPG" width="80px" height="60px" class="img-responsive">
           </a></li>
-          <li> <a id="carousel_selector_7">
+          <li> <a id="carousel_selector_07">
             <img src="images/Gallery7.JPG" width="80px" height="60px" class="img-responsive">
           </a></li>
-            <li> <a id="carousel_selector_8">
+            <li> <a id="carousel_selector_08">
             <img src="images/Gallery8.JPG" width="80px" height="60px" class="img-responsive">
           </a></li>
-              <li> <a id="carousel_selector_9">
+              <li> <a id="carousel_selector_09">
             <img src="images/Gallery9.JPG" width="80px" height="60px" class="img-responsive">
           </a></li>
               <li> <a id="carousel_selector_10">
@@ -390,7 +390,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 // handles the carousel thumbnails
 $('[id^=carousel_selector_]').click( function(){
   var id_selector = $(this).attr("id");
-  var id = id_selector.substr(id_selector.length-1);
+  var id = id_selector.substr(id_selector.length-2);
   id = parseInt(id);
   $('#myCarousel').carousel(id);
   $('[id^=carousel_selector_]').removeClass('selected');
