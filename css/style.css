@@ -47,18 +47,19 @@ body {
 }
 .h-bg{
 	border-bottom:5px solid #32251B;
-	background: url('../images/h_bg.png');
+	/*background: url('../images/h_bg.png');*/
 }
 #header{
 	display: inline-block;
     text-align: center;
     /*margin-left: 15px;*/
     width: 100%;
-    background: url('../images/h_bg.png');
+    /*background: url('../images/h_bg.png');*/
 }
 
 #site-name{
-    color: #32251b;
+    /*color: #32251b;*/
+    color: #04aae5;
     font-size: 3.0em;
     margin-top: 5%;
     text-align: initial;
@@ -79,7 +80,7 @@ body {
     /*margin-top: 2%;*/
     margin-right: 0px;
     font-size: initial;
-    background: url('../images/nav_active.png')
+    /*background: url('../images/nav_active.png')*/
 }
 
 /*Navigation Bar*/
@@ -91,7 +92,7 @@ body {
 .bet{
     text-align: right;
     background-color: #eaeaea;
-    background: url('../images/nav_active.png');
+    /*background: url('../images/nav_active.png');*/
 }
 #betp{
     font-size: 1.6em;
@@ -101,12 +102,16 @@ body {
 
 
 /*  NAVIGATION */
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
 
 /* navbar added by Varun*/
 .navbar-default {
     background-color: #fff !important;
-    border-color: #ac886b !important;
-    background: url('../images/h_bg.png');
+    /*border-color: #ac886b !important;*/
+    border-color: white!important;
+    /*background: url('../images/h_bg.png');*/
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #ac886b !important;
@@ -198,7 +203,7 @@ body {
 /*Added by Varun - End*/
 /*content*/
 .cont_bg{
-	background: url('../images/h_bg.png');
+	/*background: url('../images/h_bg.png');*/
 	padding:4% 0;
 }
 .main{
@@ -452,7 +457,7 @@ body {
 }
 /*footer*/
 .f_bg{
-	background:url('../images/f_bg.png');
+	/*background:url('../images/f_bg.png');*/
     border-top:5px solid #32251B;
 	padding: 3% 0;
 }
